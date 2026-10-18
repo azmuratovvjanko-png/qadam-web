@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QADAM — Білімге алғашқы қадам</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8f2;
+      color: #183b2c;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #123c2c;
+      color: white;
+    }
+    .logo { font-size: 27px; font-weight: 800; }
+    .logo span { color: #c8f169; }
+    nav { display: flex; gap: 25px; }
+    nav a { color: white; text-decoration: none; }
+    .hero {
+      padding: 90px 8%;
+      background: #123c2c;
+      color: white;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .tag {
+      display: inline-block;
+      color: #c8f169;
+      border: 1px solid #557b60;
+      border-radius: 30px;
+      padding: 7px 15px;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: clamp(38px, 5vw, 65px); line-height: 1.08; }
+    h1 span { color: #c8f169; }
+    .hero p { color: #d0ddd5; margin: 24px 0; max-width: 500px; }
+    .btn {
+      display: inline-block;
+      background: #c8f169;
+      color: #183b2c;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+    .hero-card {
+      background: #f7f8f2;
+      color: #183b2c;
+      border-radius: 25px;
+      padding: 30px;
+      transform: rotate(2deg);
+    }
+    .hero-card .number { font-size: 54px; font-weight: 800; }
+    .hero-card p { color: #607166; margin: 8px 0 20px; }
+    .mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mini {
+      padding: 16px;
+      border-radius: 14px;
+      background: #e9efdf;
+      font-weight: bold;
+    }
+    section { padding: 75px 8%; }
+    .eyebrow { color: #54804d; font-weight: bold; }
+    h2 { font-size: clamp(30px, 4vw, 43px); margin: 8px 0 15px; }
+    .intro { color: #647268; max-width: 600px; margin-bottom: 30px; }
+    .courses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .course {
+      background: white;
+      padding: 25px;
+      border: 1px solid #e6eadd;
+      border-radius: 20px;
+    }
+    .course .emoji { font-size: 32px; }
+    .course h3 { margin: 12px 0; font-size: 21px; }
+    .course p { color: #68766b; margin-bottom: 18px; }
+    .price { font-weight: bold; color: #3d6c3d; }
+    .about {
+      background: #e9efdf;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+    .about-card {
+      background: #123c2c;
+      color: white;
+      border-radius: 22px;
+      padding: 30px;
+    }
+    .about-card li { margin: 12px 0 12px 20px; }
+    .contact {
+      text-align: center;
+      background: #c8f169;
+    }
+    .contact p { margin: 12px auto 25px; max-width: 520px; }
+    .contact .btn { background: #123c2c; color: white; }
+    footer {
+      background: #123c2c;
+      color: #d0ddd5;
+      text-align: center;
+      padding: 25px;
+    }
+    @media (max-width: 750px) {
+      header { padding: 18px 5%; flex-wrap: wrap; gap: 15px; }
+      nav { gap: 13px; font-size: 13px; }
+      .hero, .about { grid-template-columns: 1fr; }
+      .hero { padding: 60px 6%; }
+      section { padding: 55px 6%; }
+      .courses { grid-template-columns: 1fr; }
+      .hero-card { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">QADAM<span>.</span></div>
+    <nav>
+      <a href="#home">Басты бет</a>
+      <a href="#courses">Курстар</a>
+      <a href="#about">Біз туралы</a>
+      <a href="#contact">Байланыс</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div>
+        <span class="tag">БІЛІМГЕ АЛҒАШҚЫ ҚАДАМ</span>
+        <h1>Болашағыңды <span>бүгіннен</span> баста.</h1>
+        <p>Мақсатыңа жетуге көмектесетін білім мен дағдыларды бізбен бірге меңгер.</p>
+        <a class="btn" href="#courses">Курстарды көру →</a>
+      </div>
+      <div class="hero-card">
+        <div class="number">Q+</div>
+        <h3>Өзіңе инвестиция жаса</h3>
+        <p>Әрбір жаңа білім — үлкен жетістікке бастар жол.</p>
+        <div class="mini-grid">
+          <div class="mini">📚 Сапалы білім</div>
+          <div class="mini">🎯 Нақты мақсат</div>
+          <div class="mini">💡 Жаңа дағды</div>
+          <div class="mini">🚀 Жаңа мүмкіндік</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="courses">
+      <div class="eyebrow">БІЗДІҢ БАҒЫТТАР</div>
+      <h2>Өзіңе лайық курсты таңда</h2>
+      <p class="intro">Төмендегі курстар мен бағалар — демонстрациялық үлгі. Клиентке ұсынғанда нақты ақпаратпен ауыстыр.</p>
+      <div class="courses">
+        <div class="course">
+          <div class="emoji">📐</div>
+          <h3>Математика</h3>
+          <p>Есептерді түсіну және емтиханға дайындалу.</p>
+          <div class="price">25 000 ₸ / айдан</div>
+        </div>
+        <div class="course">
+          <div class="emoji">💻</div>
+          <h3>Бағдарламалау</h3>
+          <p>Код жазудың негіздерін меңгеру.</p>
+          <div class="price">30 000 ₸ / айдан</div>
+        </div>
+        <div class="course">
+          <div class="emoji">🌍</div>
+          <h3>Ағылшын тілі</h3>
+          <p>Тілдік дағдыларды біртіндеп дамыту.</p>
+          <div class="price">25 000 ₸ / айдан</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <div class="eyebrow">QADAM ТУРАЛЫ</div>
+        <h2>Үлкен жетістік кішкентай қадамнан басталады.</h2>
+        <p>QADAM — білім беру орталығына арналған сайттың демонстрациялық үлгісі. Мұнда орталықтың артықшылықтары мен оқу бағдарламаларын көрсетуге болады.</p>
+      </div>
+      <div class="about-card">
+        <h3>Неге осы үлгіні таңдау керек?</h3>
+        <ul>
+          <li>Телефон мен компьютерге бейімделген</li>
+          <li>Курстар мен бағаларды көрсетуге ыңғайлы</li>
+          <li>WhatsApp арқылы байланысу мүмкіндігі</li>
+          <li>Қарапайым әрі заманауи дизайн</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="eyebrow">БІЗБЕН БАЙЛАНЫС</div>
+      <h2>Алғашқы қадамыңды жаса!</h2>
+      <p>Курс туралы ақпарат алу немесе жазылу үшін бізге хабарлас.</p>
+      <a class="btn" href="https://wa.me/+77478084734" target="_blank" rel="noopener">WhatsApp арқылы жазылу ↗</a>
+      <p style="font-size:13px; margin-top:15px;">Үлгі сайт: жарияламас бұрын нөмір мен мәліметтерді ауыстыр.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 QADAM. Демонстрациялық сайт үлгісі.</footer>
+</body>
+</html>
+
